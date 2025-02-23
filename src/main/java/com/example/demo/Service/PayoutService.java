@@ -165,8 +165,8 @@ public class PayoutService {
         response.put("firstname", request.getFirstName());
         response.put("email", request.getEmail());
         response.put("phone", request.getPhone());
-        response.put("surl", "https://colorstake-backend.onrender.com/api/payments/callback"); // Success URL
-        response.put("furl", "https://colorstake-backend.onrender.com/api/payments/callback"); // Failure URL
+        response.put("surl", "http://localhost:8080/api/payments/callback"); // Success URL
+        response.put("furl", "http://localhost:8080/api/payments/callback"); // Failure URL
         response.put("hash", hash);
         return response;
     }
