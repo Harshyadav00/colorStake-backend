@@ -56,7 +56,7 @@ public class PaymentController {
         String status = params.get("status");
 
         // Redirect to React frontend with query parameters
-        String redirectUrl = "http://localhost:3000/account?txnId=" + txnId + "&status=" + status;
+        String redirectUrl = "https://colorstake.netlify.app/account?txnId=" + txnId + "&status=" + status;
         response.sendRedirect(redirectUrl);
     }
 
